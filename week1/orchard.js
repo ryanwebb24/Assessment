@@ -49,6 +49,7 @@ const pinkPrice = 0.55;
 // CODE HERE
 
 let totalAcres = 0;
+// this runs a loop 7 times for each day of the week adding every orchard to the total each time 
 for (let i = 0; i < 7; i++) {
   totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i];
 }
@@ -105,7 +106,7 @@ let acresLeft = 174;
 let days = 0;
 
 // CODE HERE
-
+// Runs a while loop until the acres left becomes zero and each time it subtracts average acres from the acres left and adds a day each time
 while (acresLeft > 0) {
   acresLeft -= averageDailyAcres;
   days += 1;
@@ -141,6 +142,7 @@ console.log(`Total days: ${days}`);
 let fujiTons = [];
 let galaTons = [];
 let pinkTons = [];
+// loops 7 times for each day of the weeks and for each day times the acres by 6.5 and appends the asnwer to its corresponding variable
 for (let i = 0; i < 7; i++) {
   fujiTons.push(fujiAcres[i] * 6.5);
   galaTons.push(galaAcres[i] * 6.5);
@@ -171,6 +173,7 @@ console.log(`Pink Tons: ${pinkTons}`);
 let fujiPounds = 0;
 let galaPounds = 0;
 let pinkPounds = 0;
+// one for loop going though the tons variables and multiplying them by 2000 to find the pounds of apples each day and adding it to the corresponding variable in pounds
 for (let i = 0; i < 7; i++) {
   fujiPounds += fujiTons[i] * 2000;
   galaPounds += galaTons[i] * 2000;
@@ -197,7 +200,7 @@ console.log(`Fuji Pounds: ${fujiPounds.toLocaleString("en-US")}`);
 */
 
 // CODE HERE
-
+// multiplies the pounds of each apple by the price per pound to get the total profit for each apple individually
 let fujiProfit = fujiPounds * fujiPrice;
 let galaProfit = galaPounds * galaPrice;
 let pinkProfit = pinkPounds * pinkPrice;
@@ -216,7 +219,7 @@ console.log(`Fuji Profit: ${fujiProfit.toLocaleString("en-US")}`);
 */
 
 // CODE HERE
-
+// adds all of the profits of each apple to get the total profit and then logs it 
 let totalProfit = fujiProfit + galaProfit + pinkProfit;
 totalProfit = totalProfit.toLocaleString("en-US");
 console.log(`Total Profit is: ${totalProfit}`);
