@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="nav-list">
+          <button class="nav-button" id="home">
+            <a href="./home.html">Home</a>
+          </button>
+          <button class="nav-button" id="profile">
+            <a href="./profile.html">Profile</a>
+          </button>
+          <button class="nav-button" id="about">
+            <a href="./about.html">About</a>
+          </button>
+          <button class="nav-button" id="cool">
+            <a href="./neighborhood.html">Neighborhood</a>
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>Hello World</p>
+      <p>Welcome to the website!</p>
+      <!-- insert hello world here -->
+
+      <img
+        src="https://amsterdamduckstore.com/wp-content/uploads/2022/11/Teddy-Rubber-Duck.jpg"
+        id="rubber-duck"
+      />
+      <ul>
+        <li>You're amazing!</li>
+        <li>you're so cool!</li>
+        <li>you have nice hair!</li>
+      </ul>
+      <h2>Contact Us</h2>
+      <form id="contact">
+        Your name:
+        <input type="text" /><br />
+
+        Message:
+        <input type="textarea" /><br />
+
+        Where did you hear about us:<br />
+
+        <input type="radio" name="contact" id="google-radio" value="google" />
+        <label for="google-radio">Google</label>
+        <br />
+        <input type="radio" name="contact" id="friend-radio" value="friend" />
+        <label for="friend-radio">From a friend</label>
+        <br />
+        <input type="radio" name="contact" id="other-radio" value="other" />
+        <label for="other-radio">Other</label>
+        <br />
+        <input type="submit" id="contact-submit" />
+      </form>
+    </main>
+
+    <script src="about.js"></script>
+  </body>
+</html>

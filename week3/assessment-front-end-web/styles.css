@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+body {
+    background-color: rgb(54, 54, 54);
+}
+main{
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+main ul{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(67, 67, 67) ;
+    display: flex;
+}
+.nav-button {
+    height: 50px;
+    width: 105px;
+    background-color: rgb(67, 67, 67); /* Green */
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+ #home, #about, #profile {
+    border-right: 5px double rgb(54, 54, 54);
+}
+
+#rubber-duck {
+	height: 200px;
+	width: 200px;
+}
+#pictures {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+}
+#interactive {
+	display: flex;
+	justify-content: space-around;
+
+}
+.fav-btn {
+	border: none;
+	background-color: rgb(189, 168, 26);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 5px;
+	font-size: 18pt;
+}
+#pictures img {
+    width: 40%;
+    padding: 10px;
+}
+#contact-submit {
+	color: black;
+	border: none;
+	height: 40px;
+	padding: 5px;
+	border-radius: 5px;
+}
+#rand-btn {
+	display: flex;
+	justify-content: center;
+}
+#rand-restaurant {
+	background-color: rgb(171, 47, 47);
+	border: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 5px;
+	font-size: 18pt;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(67, 67, 67) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
