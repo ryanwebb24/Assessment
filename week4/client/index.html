@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="container">
+    <button id="compliment-btn">Get a compliment</button>
+    <button id="fortune-btn">Get a fortune</button>
+    <h2>Feedback</h2>
+    <form id="feedback">
+      <label for="rating">Rating(1-5)</label>
+      <input type="number" min="1" max="5" id="rating" />
+      <label for="comment">Comments</label>
+      <textarea name="comment" id="comment"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="star-rating">
+      <h2>Our Rating</h2>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+      <form id="changed-comment">
+        <h2>Change a comment</h2>
+        <label for="id-num">ID:</label>
+        <input id="id-num" type="number" min="0"/>
+        <label for="changed-comment-text">New Comment:</label>
+        <textarea id="changed-comment-text" ></textarea>
+        <button type="submit">Change Comment</button>
+      </form>
+      <form id="delete-comment">
+        <h2>Delete a comment</h2>
+        <label for="id-delete">ID:</label>
+        <input id="id-delete" type="number" min="0"/>
+        <button type="submit">Delete</button>
+      </form>
+      <h2>Comments</h2>
+      <button id="comment-btn">Show Comments</button>
+      <div id="comment-body"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
