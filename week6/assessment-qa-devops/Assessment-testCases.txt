@@ -1,0 +1,70 @@
+﻿Test Case 1 
+
+
+Description:
+        Test both main buttons on the home page (see all bots and draw)
+
+
+Steps:
+1. Begin by navigating to localhost:3000 (or the ip given by EC2) 
+2. Then click the See all Bots button testing its functionality (should show a list of all of the bots)
+3.  Then click the draw button and start the game( this should show a list of bots that you can choose)
+
+
+Post Conditions:
+* You should have seen a list of all the robots with the show all robots button working
+* You should also see that the the duel button works showing a list of robots to choose from
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Test Case 2
+
+
+Description:
+        Test the duel function ensuring you can only add two robots and that the robots you add are the right ones in the duel.
+Steps:
+1. Begin by navigating to localhost:3000 (or the ip given by EC2) 
+2.  Then click the draw button and start the game( this should show a list of bots that you can choose)
+3. Then try to choose 3 random bots by clicking the add duo button 
+4. Close the notification by clicking ok
+5. Then scroll all the way to the bottom and click the duel button
+6. Ensure that all the data of the robots you chose and the robots in the duel are the same
+Post conditions:
+* Get a notification telling you that you can only choose 2 bots
+* All the data from the 2 bots you choose are the same as the bots in the duel
+
+
+
+
+
+
+
+
+Bug Report for Test Case 1
+
+
+Description:
+        Failed to produce all bots in a list when clicking the see all bots.
+Steps to reproduce:
+1. Begin by navigating to localhost:3000 (or the ip given by EC2) 
+2. Then click the See all Bots button
+Expected results:
+        Should show a list of all bots after the button is pressed
+Actual Results:
+        When the button is pressed no bots show up. It shows a 400 error saying request failed
+Environment:
+        OS: Windows 10 19045.2965
+        Browser: Firefox 113.0.1 (64-bit
