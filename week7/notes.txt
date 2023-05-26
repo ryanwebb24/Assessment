@@ -1,0 +1,19 @@
+when running the append  and the insert the insert takes longer than the append
+
+
+TABLE
+-------------------------------------------------
+                |   append_time | insert_time   |
+extraLargeArray | 3.325 ms      | 1.029 s       |
+largeArray      | 514.4 us      | 9.354 ms      |
+mediumArrray    | 158.6 us      | 175.8 us      |
+smallArray      | 119.0 us      | 62.10 us      |
+tinyArray       | 93.00 us      | 37.20 us      |
+-------------------------------------------------
+
+Summary
+    the append function is growing slow and would be good for massive arrays but the insert is good for small arrays but doesnt scale well. so the append would scale the best i know this because with the small arrays it does alright but with the larger arrays the time doesnt grow as much so it will be better in the long run.
+
+    
+
+
